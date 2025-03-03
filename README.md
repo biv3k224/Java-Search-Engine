@@ -21,7 +21,6 @@ Bring this powerhouse to your machine with a quick Git clone:
 git clone https://github.com/your-username/mini-search-engine.git
 cd mini-search-engine
 ```
-(Replace `your-username` with your GitHub username once you host this repo!)
 
 ### 2. Check Out the Goodies
 Inside, you’ll find:
@@ -84,18 +83,6 @@ This project leans on some heavy hitters:
 
 All managed via Maven—check `pom.xml` for the full scoop.
 
-## ⚡ Troubleshooting
-- **"ClassNotFoundException: Main"?**
-  - Ensure `Main.java` is in `src/main/java/`. Run `mvn clean compile` again.
-- **Log4j Warning?**
-  - The `log4j-core` dependency in `pom.xml` fixes this. Rebuild with `mvn clean compile`.
-- **No Results?**
-  - Double-check your directory path and file extensions (`.txt`, `.docx`, `.pdf` supported).
-
-## 🛠️ Wanna Hack It?
-- **Add More File Types**: Tweak `DirectoryFileReader`’s glob pattern (e.g., `{*.docx,*.pdf,*.txt,*.md}`) and add parsing logic.
-- **Fancy Scoring**: Play with `FrequencyBasedSearcher` to tweak how scores are calculated.
-- **Better Logs**: Drop a `log4j2.xml` in `src/main/resources/` for custom logging vibes.
 
 ## ❤️ Built With
 Crafted as a core Java project for your resume—show off those **SOLID** skills! Questions? Hit me up in the issues tab. Now go search some docs like a boss! 😎
