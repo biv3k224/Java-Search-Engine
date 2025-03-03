@@ -1,0 +1,13 @@
+TextProcessor.class
+UserInterface.class
+SearchResult.class
+Searcher.class
+InMemoryIndexer.class
+SimpleTextProcessor.class
+DocumentFrequency.class
+Main.class
+CommandLineInterface.class
+DirectoryFileReader.class
+FrequencyBasedSearcher.class
+Indexer.class
+FileReader.class

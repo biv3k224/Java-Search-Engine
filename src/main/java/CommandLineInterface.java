@@ -16,7 +16,7 @@ public class CommandLineInterface implements UserInterface {
     @Override
     public void start() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter directory path to the index: ");
+        System.out.println("Enter directory path to index (.docx, .pdf, and .txt files): ");
         String directoryPath = scanner.nextLine();
         Map<String, String> files = fileReader.readFiles(directoryPath); // Changed to Map
         indexer.indexFiles(files);

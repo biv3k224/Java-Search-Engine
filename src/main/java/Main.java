@@ -6,5 +6,6 @@ public class Main {
 		Searcher searcher = new FrequencyBasedSearcher(indexer);
 		UserInterface ui = new CommandLineInterface(fileReader, indexer, searcher);
 		ui.start();
+		
 	}
 }
