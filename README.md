@@ -18,7 +18,7 @@ Before you dive in, make sure you’ve got:
 ### 1. Clone the Repository
 Bring this powerhouse to your machine with a quick Git clone:
 ```bash
-git clone https://github.com/your-username/mini-search-engine.git
+git clone https://github.com/biv3k224/Java-Search-Engine.git
 cd mini-search-engine
 ```
 
