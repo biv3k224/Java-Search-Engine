@@ -28,7 +28,9 @@ Bring this powerhouse to your machine with a quick Git clone:
 ```bash
 git clone https://github.com/your-username/mini-search-engine.git
 cd mini-search-engine
-2. Check Out the Goodies
+
+---
+### 2. Check Out the Goodies
 Inside, you’ll find:
 
 bash
