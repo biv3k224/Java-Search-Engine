@@ -1,3 +1,5 @@
+GraphicalUserInterface$1.class
+GraphicalUserInterface$2.class
 TextProcessor.class
 UserInterface.class
 SearchResult.class
@@ -6,8 +8,8 @@ InMemoryIndexer.class
 SimpleTextProcessor.class
 DocumentFrequency.class
 Main.class
-CommandLineInterface.class
 DirectoryFileReader.class
+GraphicalUserInterface.class
 FrequencyBasedSearcher.class
 Indexer.class
 FileReader.class
