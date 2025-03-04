@@ -1,0 +1,88 @@
+# 🚀 Mini Search Engine
+
+Welcome to the **Mini Search Engine**—a sleek, Java-powered tool that turns your `.txt`, `.docx`, and `.pdf` files into a searchable treasure trove! Whether you're digging through notes, reports, or docs, this bad boy indexes your files and ranks them by relevance with a frequency-based scoring system. Built with **SOLID** principles, it’s modular, extensible, and ready to rock your document-searching world. Let’s get started! 🎉
+
+## ✨ Features
+- **File Support**: Indexes `.txt`, `.docx`, and `.pdf` files like a pro.
+- **Smart Search**: Case-insensitive keyword search with ranked results based on word frequency.
+- **SOLID Design**: Clean, maintainable code that’s easy to tweak or expand.
+- **Actual File Names**: Shows real file names from your directory—no generic placeholders here!
+
+## 🛠️ Prerequisites
+Before you dive in, make sure you’ve got:
+- **Java 8+**: The engine runs on Java (tested with Java 1.8).
+- **Maven**: For dependency management and building the project.
+- **Git**: To clone this repo.
+
+## 🔥 Getting Started
+### 1. Clone the Repository
+Bring this powerhouse to your machine with a quick Git clone:
+```bash
+git clone https://github.com/biv3k224/Java-Search-Engine.git
+cd mini-search-engine
+```
+
+### 2. Check Out the Goodies
+Inside, you’ll find:
+```plaintext
+mini-search-engine/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── Main.java                # The entry point
+│   │   │   ├── DirectoryFileReader.java # Reads .txt, .docx, .pdf
+│   │   │   ├── InMemoryIndexer.java    # Builds the index
+│   │   │   ├── ... (other files)
+│   └── resources/                      # Optional logging config
+├── pom.xml                             # Maven magic
+└── README.md                           # This file!
+```
+
+### 3. Compile the Project
+Fire up Maven to fetch dependencies (Apache POI, PDFBox, Log4j) and compile the code:
+```bash
+mvn clean compile
+```
+If you see `[INFO] BUILD SUCCESS`, you’re golden! 🌟
+
+### 4. Run the Engine
+Launch the search engine and start exploring your files:
+```bash
+mvn exec:java
+```
+Maven runs the `Main` class automatically (thanks to the exec-maven-plugin config).
+
+## 🎮 How to Use It
+### 1. Prep Your Files
+Drop some `.txt`, `.docx`, and `.pdf` files into a directory (e.g., `C:\docs` or `/home/user/docs`).
+Example files:
+- `notes.txt`: "Java rules!"
+- `report.pdf`: "Java Java code"
+- `doc.docx`: "Java programming"
+
+### 2. Enter the Directory Path
+When prompted, type the full path to your directory (e.g., `C:\docs`) and hit Enter.
+Boom, **Indexing complete!** 🚀
+
+### 3. Search Away
+Type a query (e.g., `java`) and press Enter.
+Get ranked results like:
+```plaintext
+Results:
+1. report.pdf (score: 2.0)
+2. notes.txt (score: 1.0)
+3. doc.docx (score: 1.0)
+```
+Keep searching or type `exit` to quit.
+
+## 🧰 Dependencies
+This project leans on some heavy hitters:
+- **Apache PDFBox (2.0.27)**: For cracking open `.pdf` files.
+- **Apache POI (5.2.3)**: For parsing `.docx` goodness.
+- **Log4j 2 (2.17.1)**: For smooth logging (no more SimpleLogger warnings!).
+
+All managed via Maven—check `pom.xml` for the full scoop.
+
+
+## ❤️ Built With
+Crafted as a core Java project for your resume—show off those **SOLID** skills! Questions? Hit me up in the issues tab. Now go search some docs like a boss! 😎
